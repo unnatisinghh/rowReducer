@@ -1,0 +1,113 @@
+<!--<html>
+
+    <head>
+
+        <title>jQuery</title>
+
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <style type="text/css">
+
+            #circle {
+
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+                margin: 10px;
+
+            }
+
+            .square {
+
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                margin: 10px;
+
+            }
+
+
+        </style>
+
+    </head>
+
+    <body>
+
+       <div id="circle"></div>
+
+       <p> This is some text.</p>
+
+        <script type="text/javascript">
+
+            $("#circle").click(function() {
+                $(this).animate({
+                    width: "400px",
+                    height: "400px",
+                    marginLeft:"100px",
+                    marginTop:"100px"
+                }, 2000);
+
+
+        </script>
+
+    </body>
+
+</html> -->
+
+
+<html>
+
+<head>
+
+    <title>jQuery</title>
+
+    <script
+            type="text/javascript"
+            src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+            jQuery.noConflict();
+            jQuery(document).ready(function(){
+            jQuery("div").hide();
+     });
+    </script>
+
+    <style type="text/css">
+
+            #circle {
+
+                width: 150px;
+                height: 150px;
+                border-radius: 50%;
+                background-color: green;
+
+            }
+
+        </style>
+
+</head>
+
+<body>
+
+<div id="circle"></div>
+
+
+<script type="text/javascript">
+
+            $("#circle").hover(function() {
+
+                $(this).animate({
+                    width:"400px",
+                    height:"400px",
+                    marginLeft:"100px",
+                    marginTop:"100px"
+                }, 2000, );
+
+            });
+
+
+
+        </script>
+
+</body>
+
+</html>
